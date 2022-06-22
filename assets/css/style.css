@@ -1,0 +1,456 @@
+/* Reset CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Common */
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+    font-family: Helvetica, Arial , sans-serif;
+}
+.clear {
+    clear: both;
+}
+.white-text {
+    color: #fff !important;
+}
+.blue-text {
+    color: #2196F3!important;;
+}
+.margin-top-8 {
+    margin-top: 8px;
+}
+.margin-top-16 {
+    margin-top: 16px    ;
+}
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    display: inline-block;
+    border:none;
+}
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-double {
+    width: calc(100%/2);
+}
+.col-third {
+    width: calc(100%/3);
+}
+.text-center {
+    text-align: center !important;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan cho đến chi tiết
+*/
+/* 
+1. Vị trí
+2. Kích thước ( WIDTH VÀ HEIGHT)
+3. Màu sắc
+4. Kiểu dáng và style
+*/
+
+/* <!-- Responsive break point -->
+<!-- Mobile: width < 740px -->
+<!-- Tablet : 740px <= width < 1024px -->
+<!-- PC : width >=1024px --> */
+
+/* Main */
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    overflow: visible;
+}
+#nav {
+    display: inline-block;
+}
+#nav  > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+#nav , .subnav {
+list-style-type: none;
+}
+#nav .nav-icon-down {
+    font-size: 14px;
+}
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+    width: 100%;
+    color: #000;
+    padding: 8px 16px;
+    line-height: 22px;
+}
+#nav > li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover a,#nav > li:hover > a{
+    color:  #000 !important;
+}
+#nav .subnav li:hover,#nav > li:hover {
+    background-color: #ccc !important;
+}
+
+
+#header .search-button  {
+    float: right;
+    padding: 0px 21px;
+}
+#header .nav-icon-search,#header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .search-button:hover {
+    cursor: pointer;
+    background-color: #f44336!important;
+}
+#header .mobile-menu-btn {
+float: right;
+    padding: 0px 21px;
+    display: none;
+}
+#header .mobile-menu-btn:hover {
+    background-color: #ccc!important;
+}
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#slider {
+   position: relative;
+   margin-top: 46px;
+   padding-top: 50%;
+   background: url('/assets/img/chicago.jpg') top center /cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+#slider .text-heading {
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#slider .text-desc {
+
+}
+
+#content {
+
+}
+
+#content .section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading  {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.6;
+ }
+
+ #content .about-text {
+     margin: 15px 0px;
+     text-align:justify;
+     line-height: 1.4;
+ }
+ #content .band-member {
+    padding: 32px 0px 0px;
+ }
+#content .band-member .member-name {
+    margin: 15px 0px;
+}
+#content .band-member .member-image {
+    margin-bottom: 16px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.book-tickets {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+.book-tickets > li {
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid rgb(221,221,211);
+}
+.book-tickets >li .sold-out {
+    color: #fff ;
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+.book-tickets >li .quantity {
+    float: right;
+    width: 24px;
+    height: 22px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    margin: -3px 16px 0px 0px;
+}
+
+/* Place lists */
+#content .place-lists {
+    margin-top: 32px;
+}
+#content .place-image {
+    display: block;
+    width: 100%;
+}
+#content .place-image:hover {
+    opacity: 0.6;
+}
+#content .place-content {
+    background-color: #fff;
+    padding: 16px;
+}
+#content .place-content .place-des {
+    font-weight: bolder;
+}
+#content .place-content .place-date {
+    margin-top: 15px;
+    color: #757575;
+}
+#content .place-content .place-desc {
+    margin:15px 0px;
+    line-height: 1.5;
+}
+
+/* Contact form */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i {
+    display: inline-block;
+    width: 30px;
+}
+.contact-info a {
+    color: #0000f1;
+    opacity: 0.8;
+}
+.contact-info a:hover {
+    opacity: 1;
+}
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.contact-form .btn {
+    font-size: 15px;
+    float: right;
+}
+/* Map seciton */
+.map-section img {
+    width: 100%;
+}
+/* Footer seciton */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-logo {
+    font-size: 32px;
+}
+#footer i:hover, #footer a:hover {
+    opacity: 0.4;
+}
+#footer .copyright {
+    margin: 15px 0px;
+    color: #000;
+    opacity: 0.6;
+}
+#footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.6s;
+}
+.modal-container .modal-header {
+    color: #fff!important;
+    background-color: #009688!important;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.modal-header .bag-icon {
+    margin-right: 16px;
+}
+.modal-container .modal-close:hover {
+    opacity: 1;
+    cursor: pointer;
+    font-size: 20px;
+   
+}
+.modal-container .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 6px;
+    color: #fff;
+    opacity: 0.6;
+}
+.modal-container .modal-body {
+    padding: 16px;
+}
+.modal-body label.modal-label {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.modal-body input.modal-input {
+    border: 1px solid #ccc!important;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+#pay-button {
+    color: #fff!important;
+    background-color: #009688!important;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#pay-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+/* footer */
+.modal-container .modal-footer {
+    text-align: right;
+    padding: 16px 16px 32px;
+}
+.modal-footer a {
+    text-decoration: none;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-250px);
+    }  
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

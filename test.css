@@ -1,0 +1,38 @@
+.html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    background-color:burlywood;
+    display: flex;
+    height: 100vh;
+}
+.pc , .tablet , .mobile {
+    display: none;
+    font-size: 3rem;
+    margin: auto;;
+}
+/* <!-- Responsive break point -->
+<!-- Mobile: width < 740px -->
+<!-- Tablet : 740px <= width < 1024px -->
+<!-- PC : width >=1024px --> */
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+    .mobile {
+        display: block;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 46.25em ) and (max-width:63.9375em) {
+    .tablet {
+        display: block;
+    }
+}
+/* PC */
+@media only screen and (min-width:64em) {
+    .pc {
+        display: block;
+    }
+}
